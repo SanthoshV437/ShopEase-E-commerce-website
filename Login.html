@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My application</title>
+	<link rel="stylesheet" href="login.css">
+  <link rel="icon" href="phots/generated image.png" sizes="96x96">
+  </head>
+  <body>
+    <div class="wrapper">
+      <form>
+        <h1>Login to Your E‑Commerce Account!</h1>
+        <div class="sample">
+          <center>
+            <label for="username">Username:</label>
+            <input type="text" class="username" name="username" value="" required><br>
+          </center>
+
+          <center>
+            <label for="password">Password:</label>
+            <input type="password" name="password" value="" required><br>
+          </center>
+
+          <center>
+            <input type="submit" name="submit" value="submit" />
+          </center>
+          
+        </div>
+      </form>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const button = document.querySelector("input[type='submit']");
+
+          button.addEventListener("click", function (event) {
+              event.preventDefault();
+
+              alert("Button clicked!");
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+/* GLOBAL */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #111;
+}
+
+/* HERO */
+.contact-hero {
+  text-align: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff); /* same hero style */
+}
+
+.contact-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #00b4d8; /* index logo accent color */
+}
+
+.contact-hero p {
+  max-width: 650px;
+  margin: 10px auto 0;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+/* CONTACT CONTAINER */
+.contact-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.contact-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.contact-box h2 {
+  margin-bottom: 15px;
+  font-size: 1.9rem;
+  color: #009cb8; /* teal heading like resources links */
+}
+
+/* FORM LABELS */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* INPUTS */
+input,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #00 b4d8; /* teal focus color */
+  box-shadow: 0 0 8px #00b4d855;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* BUTTON — EXACT SAME AS INDEX.HTML */
+.primary-btn {
+  background: #00b894;   /* green button */
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.primary-btn:hover {
+  background: #019267;   /* darker green hover */
+  transform: translateY(-2px);
+}
+
+/* INFO BOX */
+.info-box {
+  margin-top: 30px;
+  padding: 25px;
+  background: #e0f7fa; /* same as hero gradient light */
+  border-left: 4px solid #95e3ed;
+  border-radius: 12px;
+  line-height: 1.7;
+}
+
+.info-box p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-hero h1 {
+    font-size: 2.2rem;
+  }
+}
