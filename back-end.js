@@ -14,9 +14,9 @@ elements.forEach((el, i) => {
   observer.observe(el);
 });
 
-// =======================================
+
 // MOBILE MENU TOGGLE
-// =======================================
+
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuIcon = menuBtn.querySelector("i");
@@ -30,6 +30,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 // Close menu on click
+
 document.querySelectorAll("#nav-links a").forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("active");
@@ -37,9 +38,9 @@ document.querySelectorAll("#nav-links a").forEach(link => {
   });
 });
 
-// =======================================
+
 // CART SYSTEM
-// =======================================
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function updateCartCount() {
